@@ -2,7 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ weight: ["900"] });
+const inter = Inter({
+  weight: ["900"],
+  subsets: ["latin"]
+});
 
 const items = [
   { text1: "React", text2: "Frontend", color: "text-sky-400" },

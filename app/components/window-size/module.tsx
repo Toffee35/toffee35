@@ -2,7 +2,9 @@
 import { useEffect, useState } from "react";
 
 export default function WindowSize() {
-  const [size, setSize] = useState<{} | { width: number; height: number }>({});
+  const [size, setSize] = useState<{ width: number; height: number } | null>(
+    null
+  );
 
   useEffect(() => {
     setSize({
